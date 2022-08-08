@@ -1,0 +1,162 @@
+@import "../../index.scss";
+
+.container {
+    display        : flex;
+    justify-content: center;
+    flex-wrap      : wrap;
+    flex-direction : column;
+    padding        : 0 3rem;
+
+    @include for-phone-only {
+        padding: 12px;
+        margin : 12px;
+
+        .name {
+            padding: 12px;
+        }
+    }
+
+
+    .name {
+        text-align     : center;
+        padding        : 2rem;
+        font-weight    : 900;
+        font-size      : 2rem;
+        display        : flex;
+        justify-content: space-around;
+        align-items    : center;
+
+
+        img {
+            border    : none;
+            background: transparent;
+            font-size : 1.2rem;
+            cursor    : pointer;
+            height    : 40px;
+        }
+
+        @include for-phone-only {
+            padding: 12px;
+        }
+    }
+
+    .detailContainer {
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: center;
+
+        .details {
+            padding        : 12px;
+            margin         : 12px;
+            align-items    : center;
+            display        : flex;
+            flex-direction : column;
+            justify-content: space-around;
+            background     : #f1f1f1;
+            border-radius  : 4px;
+            box-shadow     : 6px 5px 9px 1px #d1d0d0;
+            justify-content: space-between;
+            flex           : 1;
+            max-width      : 350px;
+            min-width      : 25%;
+
+
+            .list {
+                width         : 100%;
+                height        : auto;
+                display       : flex;
+                flex-direction: column;
+
+                .card {
+                    display        : flex;
+                    width          : 100%;
+                    justify-content: space-between;
+                    flex-direction : row;
+                    padding        : 6px;
+
+                    .key {
+                        font-size  : 16px;
+                        display    : flex;
+                        align-items: center;
+                        padding    : 0 12px;
+                        flex       : 1;
+                    }
+
+                    .value {
+                        font-size  : 18px;
+                        display    : flex;
+                        align-items: center;
+                        flex       : 1;
+                    }
+
+                }
+            }
+
+
+
+            .bottomButton {
+
+                display        : flex;
+                justify-content: space-between;
+
+            }
+
+            input {
+                border       : none;
+                outline      : none;
+                font-size    : 22px;
+                font-weight  : 600;
+                width        : 100%;
+                background   : #c4c4c4;
+                text-align   : center;
+                border-radius: 6px;
+
+            }
+
+            div {
+                font-size  : 22px;
+                font-weight: 600;
+
+            }
+
+            button {
+                color          : blue;
+                border         : none;
+                text-decoration: underline;
+                cursor         : pointer;
+                font-size      : 16px;
+            }
+
+            @include for-phone-only {
+
+                min-width: 100%;
+
+                div {
+                    font-size      : 1.2rem;
+                    display        : flex;
+                    justify-content: space-around;
+                }
+
+            }
+
+        }
+    }
+}
+
+.list {
+    .title {
+        font-size: 2rem;
+    }
+
+    ul {
+        width         : 80%;
+        padding       : 12px;
+        margin        : 12px;
+        display       : flex;
+        flex-direction: column;
+
+        li {
+            font-size: 1.4rem;
+        }
+    }
+}

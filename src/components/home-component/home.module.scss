@@ -1,0 +1,143 @@
+@import "../../index.scss";
+
+.searchBar {
+    height       : 40px;
+    box-shadow   : 0px 2px 16px 7px #e5e5e5;
+    margin-bottom: 18px;
+}
+
+.titleBar {
+    text-align     : center;
+    padding        : 1rem;
+    font-weight    : 900;
+    font-size      : 2rem;
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+
+
+
+    img {
+        border    : none;
+        background: transparent;
+        font-size : 1.2rem;
+        cursor    : pointer;
+        height    : 80px;
+        position  : absolute;
+    }
+
+    input {
+        border       : 1px solid #e7e7e7;
+        height       : 30px;
+        border-radius: 8px;
+        font-size    : 16px;
+        padding      : 0 10px;
+        color        : #aa6e00;
+        outline      : none;
+    }
+
+    .favoriteButton {
+        display        : flex;
+        flex-direction : column;
+        font-size      : 12px;
+        justify-content: center;
+        align-items    : center;
+
+        img {
+            width   : 30px;
+            height  : auto;
+            position: unset;
+        }
+    }
+
+    @include for-phone-only {
+        img {
+            position: unset;
+        }
+
+        input {
+            width: 15%;
+        }
+    }
+}
+
+.container {
+    min-height     : 70vh;
+    display        : flex;
+    justify-content: center;
+    flex-wrap      : wrap;
+    padding        : 2rem;
+
+    @include for-phone-only {
+        padding       : 12px;
+        padding-bottom: 6rem;
+    }
+
+
+
+    .card {
+        cursor         : pointer;
+        padding        : 12px;
+        margin         : 12px;
+        align-items    : center;
+        display        : flex;
+        flex-direction : column;
+        min-width      : 15%;
+        height         : 90px;
+        justify-content: space-around;
+        background     : #f1f1f1;
+        border-radius  : 4px;
+        box-shadow     : 6px 5px 9px 1px #d1d0d0;
+        flex           : 1;
+        height         : auto;
+        max-width      : 300px;
+        max-height     : 300px;
+
+        @include for-phone-only {
+            min-width: 90%;
+            height   : 120px;
+            padding  : 0;
+        }
+
+        .name {
+            font-size  : 22px;
+            font-weight: 900;
+        }
+
+        .gender {
+            width: 20px;
+        }
+
+        .planet {
+            font-size  : 16px;
+            font-weight: 600;
+        }
+
+    }
+}
+
+.previousNext {
+    display        : flex;
+    justify-content: space-evenly;
+    align-items    : center;
+    position       : fixed;
+    bottom         : 4%;
+    width          : 100%;
+
+    button {
+        padding      : 8px;
+        font-size    : 1.5rem;
+        cursor       : pointer;
+        border       : 1px solid #ffc107;
+        color        : #ffc107;
+        background   : black;
+        border-radius: 6px;
+    }
+}
+
+.previousNextDisabled {
+    background: #607d8b !important;
+    color     : #ababab !important;
+    border    : white !important;
+    cursor    : not-allowed !important;
+}

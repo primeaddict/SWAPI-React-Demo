@@ -1,0 +1,50 @@
+.loading {
+    height          : 100vh;
+    width           : 100vw;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    flex-direction  : column;
+    font-size       : 2.6rem;
+    color           : #b1cea1;
+    font-weight     : 900;
+    text-transform  : uppercase;
+    background-color: #5b5b5b54;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+}
+
+.genderCard {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    position        : fixed;
+    width           : 100%;
+    height          : 100%;
+    z-index         : 2;
+    top             : 0;
+    left            : 0;
+    justify-content : center;
+    background-color: #80808094;
+
+    p {
+        padding    : 12px;
+        padding-top: 0;
+        margin-top : 0;
+    }
+
+    .card {
+        background     : white;
+        justify-content: space-evenly;
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        border-radius  : 10px;
+        font-size      : 1.2rem;
+        width          : auto;
+        height         : auto;
+        padding        : 2rem;
+        margin         : 2rem;
+    }
+}

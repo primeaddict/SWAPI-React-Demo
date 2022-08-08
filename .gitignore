@@ -1,0 +1,15 @@
+
+.idea
+.idea/*
+
+.vscode
+.vscode/*
+
+package-lock.json
+**/build
+
+# dependencies
+/node_modules
+
+# production
+/build
