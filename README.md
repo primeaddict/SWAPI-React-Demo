@@ -9,6 +9,12 @@ Website that displays characters of Star Wars Universe using [swapi.dev](https:/
 - Character details view
 - Favourites view
 
+### maintainability
+
+- Redux store can easily scaled up for any updates
+- Used Component-Driven Development to re-use components
+- Created mixins for different devices type for Responsiveness 
+
 # Star Wars Universe Demo
 
 https://swapi-react-demo.vercel.app/
