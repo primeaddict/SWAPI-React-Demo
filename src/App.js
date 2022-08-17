@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import CharacterDetailsComponent from "./components/detail-componet/detail.component.js";
 import HomeComponent from "./components/home-component/home.component.js";
 import PNFComponent from "./components/page-not-found-component/404.component"
-import FavoriteComponent from "./components/favorites-component/favorite.component.js";
+import FavoriteComponent from "./components/favorites-component/favorite.component.tsx";
 import LoadingComponent from "./components/common-components/loading.js";
 
 function App(props) {
